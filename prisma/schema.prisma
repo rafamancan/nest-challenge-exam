@@ -26,3 +26,11 @@ model Exam {
 
   @@map("exams")
 }
+
+model User {
+  id        String @id @default(uuid())
+  email     String @unique
+  password String
+
+  @@map("users")
+}
