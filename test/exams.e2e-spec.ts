@@ -51,7 +51,6 @@ describe('ExamController (e2e)', () => {
       });
   });
 
-  
   it('/exams (POST) NEGATIVE', () => {
     const fakeCode = faker.datatype
       .number({
