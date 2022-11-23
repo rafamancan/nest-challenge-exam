@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  db: # nome do serviço
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: 'challengesecret'
+    container_name: nest-challeng-exam-database
+    ports:
+      - '5432:5432'
+    volumes:
+      - .docker/dbdata:/var/lib/postgresql/data

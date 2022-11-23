@@ -1,0 +1,28 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Exam {
+  id              String  @id @default(uuid())
+  codigo_amostra  String  @unique
+  cocaina         Int
+  anfetamina      Int
+  metanfetamina   Int
+  mda             Int
+  mdma            Int
+  thc             Int
+  morfina         Int
+  codeina         Int
+  heroina         Int
+  benzoilecgonina Int
+  cocaetileno     Int
+  norcocaina      Int
+  resultado       Boolean
+
+  @@map("exams")
+}
