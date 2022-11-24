@@ -8,6 +8,7 @@ Clone this repository on your local folder.
 ```bash
 npm install
 docker-compose -up -d
+cp .env .env.example
 npx migrate dev
 
 ```
