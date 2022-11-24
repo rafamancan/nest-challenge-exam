@@ -20,7 +20,7 @@ npx migrate dev
 npm run start:dev
 ```
 
-## Test (TODO: the tests were written before the GUARDS were deployed so they are currently breaking 😅)
+## Testing
 
 ```bash
 # unit tests
