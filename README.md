@@ -9,7 +9,7 @@ Clone this repository on your local folder.
 npm install
 docker-compose -up -d
 cp .env.example .env
-npx migrate dev
+npx prisma migrate dev
 
 ```
 
